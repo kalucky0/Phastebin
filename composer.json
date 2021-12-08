@@ -1,0 +1,12 @@
+{
+    "require": {
+        "slim/slim": "3.*",
+        "predis/predis": "0.8.*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Phastebin": "src/"
+        }
+    }    
+}
