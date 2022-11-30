@@ -9,7 +9,7 @@ Updated and improved version of [PHP Port](https://github.com/prawnsalad/Phasteb
 
 ## Install
 
-1. Clone `git clone https://github.com/prawnsalad/Phastebin.git`
+1. Clone `git clone https://github.com/kalucky0/Phastebin.git`
 2. Install packages `composer install`
 
 ## Contributing
@@ -17,9 +17,9 @@ Updated and improved version of [PHP Port](https://github.com/prawnsalad/Phasteb
 Contributions are always welcome!
 
 - Fork the Project
-- Create your Feature Branch (`git checkout -b feature/NewFeature`)
+- Create your Feature Branch (`git checkout -b NewFeature`)
 - Commit your Changes (`git commit -m 'Add a new feature'`)
-- Push to the Branch (`git push origin feature/NewFeature`)
+- Push to the Branch (`git push origin NewFeature`)
 - Open a Pull Request
 
 ## License
