@@ -1,13 +1,12 @@
 <?php
 
-	ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);
+use Phastebin\Phastebin;
+use Slim\Factory\AppFactory;
 
-	$loader = require '../vendor/autoload.php';
-	$config = require '../config/config.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-	$app = new \Slim\App($config);
-	$phastebin = new \Phastebin\Phastebin($app);
+$app = AppFactory::create();
 
-	$app->run();
+$phastebin = new Phastebin($app);
+
+$app->run();
