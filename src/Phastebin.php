@@ -99,7 +99,7 @@ class Phastebin
          * Serving up the index page
          */
         $app->get('/[{id}]', function (Request $request, Response $response) use ($app, $self): Response {
-            readfile(__DIR__ . '/../../public/main.html');
+            readfile(__DIR__ . '/../public/main.html');
             return $response->withStatus(200)->withHeader('Content-Type', 'text/html');
         });
     }
