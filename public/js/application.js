@@ -29,13 +29,17 @@ haste_document.prototype.load = function(key, callback, lang) {
           high = { value: _this.htmlEscape(res.data) };
         }
         else if (lang) {
-          high = hljs.highlight(lang, res.data);
+          console.log('highlighting with ' + lang);
+          high = hljs.highlight(res.data, {
+            language: lang
+          });
         }
         else {
+          console.log('auto');
           high = hljs.highlightAuto(res.data);
         }
       } catch(err) {
-        // failed highlight, fall back on auto
+        console.log(err);
         high = hljs.highlightAuto(res.data);
       }
       callback({

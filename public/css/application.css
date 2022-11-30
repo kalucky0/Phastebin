@@ -89,7 +89,7 @@ textarea {
 
 #box1 a.logo, #box1 a.logo:visited {
     display: inline-block;
-    background: url(logo.png);
+    background: url(../img/logo.png);
     filter: saturate(0);
     width: 126px;
     height: 42px
@@ -100,7 +100,7 @@ textarea {
 }
 
 #box2 .function {
-    background: url(function-icons.png);
+    background: url(../img/function-icons.png);
     width: 32px;
     height: 37px;
     display: inline-block;
@@ -121,7 +121,7 @@ textarea {
     display: block;
     height: 5px;
     width: 10px;
-    background: url(hover-dropdown-tip.png);
+    background: url(../img/hover-dropdown-tip.png);
     bottom: 0;
     position: absolute;
     margin: auto;
