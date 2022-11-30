@@ -1,18 +1,41 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1f2224 #282b2e;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #282b2e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1f2224;
+    border: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+}
+
 body {
     background: #282b2e;
     height: 100vh;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
-#linenos,textarea {
+#linenos, textarea {
     font-family: monospace
 }
 
 textarea {
     background: 0 0;
     color: #fff;
-    height: 100%;
+    min-height: calc(100vh - 4px);
     resize: none
 }
 
@@ -27,7 +50,7 @@ textarea {
     text-align: right
 }
 
-#box,textarea {
+#box, textarea {
     width: 100%;
     border: 0;
     outline: 0;
@@ -42,7 +65,7 @@ textarea {
 
 #box code {
     padding: 0;
-    background: 0 0!important
+    background: 0 0 !important
 }
 
 #key {
@@ -64,7 +87,7 @@ textarea {
     padding: 0 5px
 }
 
-#box1 a.logo,#box1 a.logo:visited {
+#box1 a.logo, #box1 a.logo:visited {
     display: inline-block;
     background: url(logo.png);
     filter: saturate(0);
@@ -106,15 +129,15 @@ textarea {
     right: 0
 }
 
-#box3,#messages li {
+#box3, #messages li {
     background: #2f3337;
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 12px;
     line-height: 14px;
     padding: 10px 15px
 }
 
-#box3 .label,#messages li {
+#box3 .label, #messages li {
     color: #fff;
     font-weight: 700
 }
@@ -194,11 +217,11 @@ textarea {
 }
 
 #messages li {
-    background: rgba(23,62,72,.8);
+    background: rgba(23, 62, 72, .8);
     margin: 0 auto;
     list-style: none
 }
 
 #messages li.error {
-    background: rgba(102,8,0,.8)
+    background: rgba(102, 8, 0, .8)
 }
