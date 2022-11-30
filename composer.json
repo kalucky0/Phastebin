@@ -11,5 +11,8 @@
       "Phastebin\\Stores\\": "src/Stores/",
       "Phastebin\\KeyGenerators\\": "src/KeyGenerators/"
     }
+  },
+  "require-dev": {
+    "rector/rector": "^0.14.8"
   }
 }
